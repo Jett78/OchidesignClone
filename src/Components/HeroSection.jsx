@@ -8,8 +8,8 @@ const HeroSection = () => {
         {["WE CREATE", "EYE OPENING", "PRESENTATION"].map((item, index) => (
           <div className="masker" key={index}>
             <div className="flex items-end">
-                {index===1 && (<div className="w-20 h-12 bg-red-200"></div>)}
-            <h2 className='text-8xl font-bold font-["Founders_Grotesk] leading-[5.5vw] tracking-tighter'> {item} </h2>
+                {index===1 && (<div className="w-24 h-[4.5vw] bg-red-200"></div>)}
+            <h2 className=' text-8xl font-bold  font-["Founders_Grotesk] tracking-tighter'> {item} </h2>
             </div>
           </div>
         ))}
