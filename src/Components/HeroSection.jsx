@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { FaArrowUpLong } from "react-icons/fa6";
 
@@ -7,8 +8,13 @@ const HeroSection = () => {
       <div className="px-16 mt-40">
         {["WE CREATE", "EYE OPENING", "PRESENTATION"].map((item, index) => (
           <div className="masker" key={index}>
-            <div className="flex items-end">
-                {index===1 && (<div className="w-24 h-[4.5vw] bg-red-200"></div>)}
+            <div className="flex items-center">
+                {index===1 &&
+                 (<motion.div 
+                 initial={{width:"0"}}
+                 animate={{width:"10vh"}}
+                 transition={{ease:"easeInOut",duration:1}}
+                 className="h-[4.2vw] mt-2 bg-red-200"></motion.div>)}
             <h2 className=' text-8xl font-bold  font-["Founders_Grotesk] tracking-tighter'> {item} </h2>
             </div>
           </div>
