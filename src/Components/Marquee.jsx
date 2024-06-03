@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 const Marquee = () => {
   return (
-    <div className="w-full py-10 bg-[#004D43] rounded-tl-3xl rounded-tr-3xl">
+    <div data-scroll data-scroll-section data-scroll-speed="-.10"  className="w-full py-10 bg-[#004D43] rounded-tl-3xl rounded-tr-3xl">
       <div className="flex whitespace-nowrap border-y overflow-hidden">
         <motion.h1 
         initial={{x:0}}

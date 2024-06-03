@@ -3,8 +3,8 @@ import React from "react";
 import { FaArrowUpLong } from "react-icons/fa6";
 
 const HeroSection = () => {
-  return (
-    <div className="w-full h-screen bg-black pt-1">
+  return (    //locomotive feature for fast or slow scrolling on component
+    <div data-scroll data-scroll-section data-scroll-speed="-.5" className="w-full h-screen bg-black pt-1">
       <div className="px-16 mt-40">
         {["WE CREATE", "EYE OPENING", "PRESENTATION"].map((item, index) => (
           <div className="masker" key={index}>
